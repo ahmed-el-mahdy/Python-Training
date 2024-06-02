@@ -1,5 +1,8 @@
 #Python Traning
 
+for az in range(ord('a'), ord('z')+1): print(chr(az))
+
+
 print("I Love Python")
 print("I Love Programming")
 
@@ -63,9 +66,9 @@ print(type(2 == 2))  # bool => Boolean
 # [5] Name is Not Like name [ Case Sensitive ]
 # --------------------------------------
 
-name = "Osama Elzero"  # Single Word => Normal
-myName = "Osama Elzero"  # Two Words => camelCase
-my_name = "Osama Elzero"  # Two Words => snake_case
+name = "Ahmed Elmahdy"  # Single Word => Normal
+myName = "Ahmed Elmahdy"  # Two Words => camelCase
+my_name = "Ahmed Elmahdy"  # Two Words => snake_case
 
 print(name)
 print(myName)
@@ -145,15 +148,15 @@ print(msg + " " + lang)
 full = msg + " " + lang
 print(full)
 
-a = "First \
+e = "First \
 Second \
 Third"
 
-b = "A \
+f = "A \
 B \
 C"
 
-print(a + "\n" + b)
+print(e + "\n" + f)
 
 #print("Hello " + 1)  # Error
 
@@ -221,3 +224,198 @@ print(myString[::1])  # Full Data
 
 print(myString[::2])
 print(myString[::3])
+
+
+# ---------------------#---------------------#---------------------# ---------------------
+# -- Strings Methods --
+# ---------------------
+
+# strip() rstrip() lstrip()
+
+a = "    I Love Python    "
+print(a.strip())
+print(a.rstrip())
+print(a.lstrip())
+
+a = "#####I Love Python####"
+print(a.strip("#"))
+print(a.rstrip("#"))
+print(a.lstrip("#"))
+
+a = "@#@#@#I Love Python@#@#@#"
+print(a.strip("@#"))
+print(a.rstrip("@#"))
+print(a.lstrip("@#"))
+
+# title()
+
+b = "I Love 2d Graphics and 3g Technology and python"
+print(b.title())
+
+# capitalize()
+
+b = "I Love 2d Graphics and 3g Technology and python"
+print(b.capitalize())
+
+# zfill
+
+c, d, e, f = "1", "11", "111", "1111"
+
+print(c)
+print(d)
+print(e)
+print(f)
+
+print(c.zfill(4))
+print(d.zfill(4))
+print(e.zfill(4))
+print(f.zfill(4))
+
+# upper()
+
+g = "ahmed"
+
+print(g.upper())
+
+# lower()
+
+h = "Ahmed"
+
+print(h.lower())
+
+
+# ------------------------------------------------------------------------------
+# -- Strings Methods --
+# ---------------------
+
+# split() rsplit()
+
+aa = "I Love Python and PHP and MySQL"
+print(aa.split())
+
+bb = "I-Love-Python-and-PHP-and-MySQL"
+print(bb.split("-"))
+
+cc = "I-Love-Python-and-PHP-and-MySQL"
+print(cc.split("-", 3))
+
+dd = "I-Love-Python-and-PHP-and-MySQL"
+print(dd.rsplit("-", 3))
+
+# center()
+
+ee = "Ahmed"
+print(ee.center(9))  # Spaces
+print(ee.center(9, "#"))  # Hashes
+print(ee.center(15, "@"))  # @
+
+# count()
+
+ff = "I Love Python and PHP Because PHP is Easy"
+print(ff.count("PHP"))  # 2 PHP Words
+print(ff.count("PHP", 0, 25))  # Only One PHP Word
+
+# swapcase()
+
+gg = "I Love Python"
+hh = "i lOVE pYTHON"
+
+print(gg.swapcase())
+print(hh.swapcase())
+
+# startswith()
+
+i = "I Love Python"
+print(i.startswith("I"))
+print(i.startswith("S"))
+print(i.startswith("P", 7, 12))
+
+# endswith()
+
+j = "I Love Python"
+print(j.endswith("n"))
+print(j.endswith("S"))
+print(j.endswith("e", 2, 6))
+
+
+# ------------------------------------------------------------------------------
+# -- Strings Methods --
+# ---------------------
+
+# index(SubString, Start, End)
+
+a1 = "I Love Python"
+# print(a1.index("P"))  # Index Number 7
+# print(a1.index("P", 0, 10))  # Index Number 7
+# print(a.index("P", 0, 5))  # Through Error
+
+# find(SubString, Start, End)
+
+b1 = "I Love Python"
+print(b1.find("P"))  # Index Number 7
+print(b1.find("P", 0, 10))  # Index Number 7
+print(b1.find("P", 0, 5))  # -1
+
+# rjust(Width, Fill Char) ljust(Width, Fill Char) adding space or # after or before
+
+c1 = "Osama"
+print(c1.rjust(10))
+print(c1.rjust(10, "#"))
+
+d1 = "Osama"
+print(d1.ljust(10))
+print(d1.ljust(10, "#"))
+
+# splitlines()
+
+e1 = """First Line
+Second Line
+Third Line"""
+
+print(e1.splitlines())
+
+f1 = "First Line\nSecond Line\nThird Line"
+
+print(f1.splitlines())
+
+# expandtabs()
+
+g1 = "Hello\tWorld\tI\tLove\tPython"
+print(g1.expandtabs(2))
+
+one = "I Love Python And 3G"
+two = "I Love Python And 3g"
+print(one.istitle())
+print(two.istitle())
+
+three = " "
+four = ""
+print(three.isspace())
+print(four.isspace())
+
+five = 'i love python'
+six = 'I Love Python'
+print(five.islower())
+print(six.islower())
+
+seven = "osama_elzero"
+eight = "OsamaElzero100"
+nine = "Osama--Elzero100"
+
+print(seven.isidentifier())
+print(eight.isidentifier())
+print(nine.isidentifier())
+
+x1 = "AaaaaBbbbbb"
+y1 = "AaaaaBbbbbb111"
+print(x1.isalpha())
+print(y1.isalpha())
+
+u1 = "AaaaaBbbbbb"
+z1 = "AaaaaBbbbbb111"
+print(u1.isalnum())
+print(z1.isalnum())
+
+
+
+
