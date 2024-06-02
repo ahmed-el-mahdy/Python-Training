@@ -469,9 +469,52 @@ print("My Name is:"+ name2)
 print("My Name is: {}" .format("Ahmed"))
 print("My Name is: {}" .format("name2"))
 
-# print("My Name is: %s" and My Age is: %d" % (name2, age))
+print("My Name is: {} and My Age is: {}" .format (name2, age))
+print("My Name is: {} and My Age is: {} and my Rank is: {}" .format (name2, age, rank)) 
+#The Same when we put the s or d or f into the {} like {s}  {d}  {f}
+print("My Name is: {:s}, Age is: {:d}, Rank is: {:f}" .format (name2, age, rank))
 # print("My Name is: %s" % "Ahmed")
-# print("My Name is: %s" % "Ahmed")
+
+# {:s} => String
+# {:d} => Number
+# {:f} => Float
+print("My Number is: {:d}".format(myNumber))
+print("My Number is: {:f}".format(myNumber))
+print("My Number is: {:.2f}".format(myNumber))
+
+print("Massage is {}".format(myLongString))
+print("Massage is {:.5s}".format(myLongString))
+print("Massage is {:.13s}".format(myLongString))
+
+# Format Money ------------------------------------------------------------------------------------------
+myMoney= 54442009966
+print("My Mony in bank is:{:d}".format(myMoney))  # we can type {} without :d  it will works fine 
+print("My Mony in bank is:{:_d}".format(myMoney))
+print("My Mony in bank is:{:,d}".format(myMoney))
+
+
+# ReArrange Items ------------------------------------------------------------------------------------------
+
+ab, bc, de ="One" , "Two", "Three"
+print("Hello {} {} {}".format(ab,bc,de))
+print("Hello {1} {2} {0}".format(ab,bc,de)) 
+print("Hello {2} {1} {0}".format(ab,bc,de))
+
+
+q, w, r= 10, 20, 30 
+print("Hello {} {} {}".format(q,w,r))
+print("Hello {1:d} {2:d} {0:d}".format(q,w,r)) 
+print("Hello {2:.2f} {1:.4f} {0:.5f}".format(q,w,r))
+
+
+# Formating in Version 3.6+
+
+myname= "Ahmed"
+MyAge= 36
+
+print("My Name is :{myname} and My Age is :{MyAge}")  # it will print My Name is :myname and My Age is : MyAge
+print(f"My Name is :{myname} and My Age is :{MyAge}") # We just need to add f before "" => f""
+
 
 
 
