@@ -416,6 +416,63 @@ z1 = "AaaaaBbbbbb111"
 print(u1.isalnum())
 print(z1.isalnum())
 
+# ----------------------------------------------------------------------------
+
+# -- Strings Formatting --
+# ------------------------
+
+name1 = "Ahmed"
+age = 30
+rank = 10
+
+print("My Name is: " + name1)
+# print("My Name is: " + name + " and My Age is: " + age)  # Type Error
+
+print("My Name is: %s" % "Ahmed")
+print("My Name is: %s" % name1)
+print("My Name is: %s and My Age is: %d" % (name1, age))
+print("My Name is: %s and My Age is: %d and My Rank is: %f" % (name1, age, rank))
+
+# %s => String
+# %d => Number
+# %f => Float
+
+n = "Ahmed"
+l = "Python"
+y = 10
+
+print("My Name is %s Iam %s Developer With %d Years Exp" % (n, l, y))
+
+# Control Floating Point Number
+
+myNumber = 10
+print("My Number is: %d" % myNumber)
+print("My Number is: %f" % myNumber)
+print("My Number is: %.2f" % myNumber)
+
+# Truncate String
+
+myLongString = "Hello Peoples This is Ahmed, I Love You All"
+print("Message is %s" % myLongString)
+print("Message is %.5s" % myLongString)
+
+# ----------------------------------------------------------------------------
+#-- Strings Formatting New Ways 
+# -------------------------------
+
+name2='Ahmed'
+age=36
+rank=10
+print("My Name is:"+ name2)
+# print("My Name is:" + name2 +"and My Age is: " + age) #type Error 
+ 
+print("My Name is: {}" .format("Ahmed"))
+print("My Name is: {}" .format("name2"))
+
+# print("My Name is: %s" and My Age is: %d" % (name2, age))
+# print("My Name is: %s" % "Ahmed")
+# print("My Name is: %s" % "Ahmed")
+
 
 
 
