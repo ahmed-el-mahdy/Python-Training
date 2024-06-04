@@ -469,7 +469,8 @@ print("My Name is:"+ name2)
 print("My Name is: {}" .format("Ahmed"))
 print("My Name is: {}" .format("name2"))
 
-# print("My Name is: %s" and My Age is: %d" % (name2, age))
+print("My Name is: {}" "and My Age is: {}" .format(name2, age))
+print("My Name is:{}," "Age:{},""rank:{}" .format(name2, age,rank))
 # print("My Name is: %s" % "Ahmed")
 # print("My Name is: %s" % "Ahmed")
 
