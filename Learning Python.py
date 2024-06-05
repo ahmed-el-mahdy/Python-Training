@@ -134,7 +134,7 @@ print("123456\rAbcde")
 print("Hello\tPython")
 
 # Character Hex Value
-print("\x4F\x73")
+print("\x41\x68\x6D\x65\x64\x20\x45\x6C\x4D\x61\x68\x79")
 
 
 # ----------------------------------------------------------------------------#
@@ -565,40 +565,52 @@ print(10.5+0j)
 # [//] Floor Division
 # --------------------------
 
+# Addition [+]
+  
+print(10+30) #40
+print(-10+30) #20
+print(1.2+2) #3.2
+print(1.3+3.6) #4.9
 
 
+# [-] Subtraction
 
+print(50-20) #30
+print(-50-20) #70
+print(-50- -20) #-30
+print(-5.60-2.40) #3.20
 
+# Multiplication [*]
 
+print(5+10*100) #1005
+print((5+10)*100) #1500
 
+#  Division [/]
 
+print(100/20) # 5.0
+print(int(100/20)) # 5.0
 
+# [%] Modulus  باقي القسمة 
 
+print(8%2) # 0  
+print(9%2) # 1
+print(20%5) # 0
+print(22%5) # 2
 
+# [**] Exponent
 
+print(2**5) #32 = print(2*2*2*2*2)32
+print(5**4) #625 =print(5*5*5*5)
 
+# [//] Floor Division ==> the same to # [%] Modulus  باقي القسمة 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(100//20) #5
+print(110//20) #5
+print(119//20) #5
+print(120//20) #6
+print(125//20) #6
+print(131//20) #6
+print(140//20) #7
 
 
 
