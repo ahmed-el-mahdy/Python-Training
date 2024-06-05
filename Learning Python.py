@@ -358,11 +358,11 @@ print(b1.find("P", 0, 5))  # -1
 
 # rjust(Width, Fill Char) ljust(Width, Fill Char) adding space or # after or before
 
-c1 = "Osama"
+c1 = "Ahmed"
 print(c1.rjust(10))
 print(c1.rjust(10, "#"))
 
-d1 = "Osama"
+d1 = "Ahmed"
 print(d1.ljust(10))
 print(d1.ljust(10, "#"))
 
@@ -398,9 +398,9 @@ six = 'I Love Python'
 print(five.islower())
 print(six.islower())
 
-seven = "osama_elzero"
-eight = "OsamaElzero100"
-nine = "Osama--Elzero100"
+seven = "Ahmed"
+eight = "Ahmed"
+nine = "Ahmed--ElMahdy100"
 
 print(seven.isidentifier())
 print(eight.isidentifier())
@@ -553,7 +553,17 @@ print(10.5+0j)
 # print(int(10.5+0j)) TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
 
 
-
+#-------------------------------------------------------------------------------------------------
+# -- Arithmetic Operators ---
+# --------------------------
+# [+] Addition
+# [-] Subtraction
+# [*] Multiplication
+# [/] Division
+# [%] Modulus
+# [**] Exponent
+# [//] Floor Division
+# --------------------------
 
 
 
