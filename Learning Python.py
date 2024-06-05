@@ -514,6 +514,106 @@ print("My Name is :{myname} and My Age is :{MyAge}")  # it will print My Name is
 print(f"My Name is :{myname} and My Age is :{MyAge}") # We just need to add f before "" => f""
 
 
+#-------------------------------------------------------------------------------------------------
+# -- Numbers -- 
+
+#Intger 
+print(type(10))
+print(type(100))
+print(type(-10))
+print(type(-110))
+
+#-- Float 
+
+print(type(1.500))
+print(type(100.99))
+print(type(0.99))
+print(type(-0.99))
+
+#--Complex 
+
+mycomplexnumber=5+6j
+print(type(mycomplexnumber))
+print("Real Part Is: {}".format(mycomplexnumber.real))
+print("Imaginary Part Is: {}".format(mycomplexnumber.imag))
+
+# [1] You can convert from int to float or complex 
+# [2] You can convert from float to int or complex 
+# [3] You cannot convert from complex to Any type   
+
+print(100)
+print(float(100))
+print(complex(100))
+
+print(10.50)
+print(int(10.50))
+print(complex(10.50))
+
+print(10.5+0j)
+# print(int(10.5+0j)) TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
