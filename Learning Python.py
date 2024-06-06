@@ -612,6 +612,79 @@ print(125//20) #6
 print(131//20) #6
 print(140//20) #7
 
+#-------------------------------------------------------------------------------------------------
+# -- Lists --
+#------------
+
+myawesomelist=['one', 'two', 'three', 1, 100.5, True]
+print(myawesomelist) #whole List
+print(myawesomelist[1]) # one
+print(myawesomelist[-1]) # true
+print(myawesomelist[-3]) # 1
+
+#slicing 
+print(myawesomelist[1:4]) # => ["two", "one", 1]
+print(myawesomelist[:4]) # from  the begining to the index 4 => ['one, two, three', 1, 100.5, True]
+print(myawesomelist[1:]) # from  the index 1 to the end of the list => [1, 100.5, True]
+
+
+print(myawesomelist[::1]) #normal print => ['one, two, three', 1, 100.5, True]
+print(myawesomelist[::2]) # step 2 ignore idex and print index 
+# print(myawesomelist[150]) # error index not found
+
+print(myawesomelist)
+myawesomelist[1] = 2
+myawesomelist[-1] = False
+myawesomelist[0:3] = ['A','B','C']  # editing the list index  slice by slice 
+myawesomelist[0:3] = ['A','B']
+print(myawesomelist)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
