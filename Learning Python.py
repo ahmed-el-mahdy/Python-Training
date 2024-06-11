@@ -639,21 +639,47 @@ myawesomelist[0:3] = ['A','B','C']  # editing the list index  slice by slice
 myawesomelist[0:3] = ['A','B']
 print(myawesomelist)
 
+#--------------------------------------------------------------------------------------------
+
+# append() adding new elment to list 
+myfriends= ["omar", "ahmed", "mahdy"]
+myoldfriends= ["sameh", "saad", "nooh"]
+myfriends.append("Alaa")
+myfriends.append(100)
+myfriends.append(100.200) #bolum value 
+myfriends.append(True)
+myfriends.append(myoldfriends) # it will be added as one element 
+
+
+print(myfriends)
+print(myfriends[2])
+print(myfriends[6])
+print(myfriends[7])
+print(myfriends[7][2]) #[7]the second list [2] the second element of this list 
+
+
+# extend() 
+listA=[1, 2, 3, 4]
+listB=['A', 'B', 'C', 'D']
+listC=['one', 'two', 'three', 'four']
+print(listA)
+print(listB)
+print(listC)
+# listA.extend(listB)
+listA.extend(listC)
+print(listA)
+
+
+# Remove()
+
+xy=[1,2,3,4,5,'mahdy',True, 'omar', 'mahdy']
+xy.remove("mahdy")
+print(xy)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+# Sort()
+zyx=[1,2,100,120,-10,17,27]
 
 
 
