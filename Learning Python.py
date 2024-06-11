@@ -680,39 +680,57 @@ print(xy)
 
 # Sort()
 zyx=[1,2,100,120,-10,17,27]
+print(zyx)
+zyx.sort()
+print(zyx)
+zyx=[1,2,100,120,-10,17,27]
+zyx.sort(reverse=True)
+# zyx=[1,2,100,120,-10,17,27,"Ahned"]
+# zyx.sort(reverse=True) #  not supported between instances of 'int' and 'str' 
+print(zyx)
 
+zyx=['a','z','c']
+zyx.sort(reverse=True)
+print(zyx)
 
+# reverse()
+newlist=[10,1,9,100,"Ahmed",100]
+newlist.reverse()
+print(newlist)
 
+#clear()
+list1=[1,2,3,4]
+list1.clear()
+print(list1)
 
+#copy()
+list2=[1,2,3,4]
+list3=list2.copy()
 
+list2.append(5)
 
+print(list2) # Main list 
+print(list3) # Copied list 
 
+# Count()
+countlist=[1,2,3,4,5,5,6,9,6,7,8,9,1,10,10,]
+print(countlist.count(1))
 
+# index()
+indexlist=['ahmed','ali','anas','alaa','omr'] 
+print(indexlist.index('omr'))
 
+# insert()  like append 
+insertlist=[1,23,4,5,6,7,79,74,22,11,47]
+insertlist.insert(5,'Test')
+insertlist.insert(0,'Test')
+insertlist.insert(-1,'Test')
+print(insertlist)
 
+# pop()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+poplist=[1,2,3,4,5,'A','B']
+print(poplist.pop(5)) # it will retreve with element index number
 
 
 
