@@ -648,14 +648,14 @@ myfriends.append("Alaa")
 myfriends.append(100)
 myfriends.append(100.200) #bolum value 
 myfriends.append(True)
-myfriends.append(myoldfriends) # it will be added as one element 
+myfriends.append(myoldfriends) # it will be added as one eliment 
 
 
 print(myfriends)
 print(myfriends[2])
 print(myfriends[6])
 print(myfriends[7])
-print(myfriends[7][2]) #[7]the second list [2] the second element of this list 
+print(myfriends[7][2]) #[7]the second list [2] the second eliment of this list 
 
 
 # extend() 
@@ -675,7 +675,6 @@ print(listA)
 xy=[1,2,3,4,5,'mahdy',True, 'omar', 'mahdy']
 xy.remove("mahdy")
 print(xy)
-
 
 
 # Sort()
@@ -730,7 +729,181 @@ print(insertlist)
 # pop()
 
 poplist=[1,2,3,4,5,'A','B']
-print(poplist.pop(5)) # it will retreve with element index number
+print(poplist.pop(5)) # it will retreve with eliment index number
+
+
+#------------------------------------------------------------------------------------------------
+#-- Tuple()
+#[1] Tuple items are enclosed in parentheses.
+#[2] You can Remove The Parentheses if you want.
+#[3] Tuple are ordered, To use indes to access item
+#[4] Tuple are immutable => You can add or Delete
+#[5] Tuple Items not unique 
+#[6] Tuple can hava different data types
+#[7] Operators used in strings and lists available in Tuple
+#---------------------------------------
+#Type Syntax  & type Test 
+myawesometupleone=('ahmed',"ali",'omar')
+myawesometupletwo='ahmed',"ali",'omar'
+
+print(myawesometupleone)
+print(myawesometupletwo)
+
+print(type(myawesometupleone))
+print(type(myawesometupletwo))
+
+
+# Tuple Indexing 
+myawesometuplethree= 1,2,3,4,5
+print(myawesometuplethree[0])
+print(myawesometuplethree[3])
+print(myawesometuplethree[-2])
+
+# Tuple assign values 
+myawesometuplefour= 1,2,3,4,5
+# myawesometuplefour[2] ="Three"
+# print(myawesometupletfour) # tuple' object does not support item assignment
+
+
+# Tuple items 
+myawesometuplefive= "ali", "nadia", 'alaa',1,2,3,12.25,True
+print(myawesometuplefive[1])
+print(myawesometuplefive[-1])
+
+# Tuple with one Eliment how to define it as a tuple with only one eliment. we can add , after the eliment 
+mytuple1= 'osama',
+mytuple2= 'ali',
+
+print (mytuple1)
+print (mytuple2)
+
+print (type(mytuple1))
+print (type(mytuple2))
+
+print (len(mytuple1)) # to display the number of the elements in the tuple by using len function.
+print (len(mytuple2)) # to display the number of the elements in the tuple by using len function.
+
+
+# Tuple concatenation 
+
+tuple11= 1,2,3,4
+tuple22= 5,6
+tuple33=tuple11+tuple22 
+tuple44=tuple11+('a','b')+tuple22 # adding some items to two tuple
+
+print(tuple33)
+print(tuple44)
+
+# Tuple , list , string repeat (*)
+
+string1='ahmed'
+listy= [1,2]
+tupley= 'a','b','c'
+
+print (string1*6)
+print (listy*6)
+print (tupley*6)
+
+# Method => Count()
+
+tuplex=2,2,44,23,5,66,78,88,44,23,44
+print(tuplex.count(44))
+
+# Method => index() with formating.
+
+tupleb=(1,2,3,4,5,6,7,8,9)
+print(tupleb.index(4))
+# print("The Positon is :"+tupleb.index(7)) # Error 
+print("The Positon is :{:d}".format(tupleb.index(7))) 
+print(f"The Positon is :{tupleb.index(7)}")
+
+# Tuple Destruct 
+tuple0= ("a","b","b","c")
+x2,y2,z2 = 'a','b','c'
+print(x2,y2,z2)
+x2,y2,z2 = tuple0
+print(x2,y2,z2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
