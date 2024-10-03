@@ -818,77 +818,100 @@ print("The Positon is :{:d}".format(tupleb.index(7)))
 print(f"The Positon is :{tupleb.index(7)}")
 
 # Tuple Destruct 
-tuple0= ("a","b","b","c")
+tuple0= ("A","B","C","D")
 x2,y2,z2 = 'a','b','c'
 print(x2,y2,z2)
-x2,y2,z2 = tuple0
+
+x2,y2,z2,_, = tuple0 # _ will ignore this varuable position 
 print(x2,y2,z2)
 
 
+#------------------------------------------------------------------------------------------------
+#-- Set () ---
+#[1] set items are enclosed in curly braces 
+#[2] set items are not oredered and not indexed 
+#[3] set indexing and slicing can'y be done 
+#[4] set has only immutable data type (number, strings, tuples) list and dict are not 
+#[5] set item is uniqe 
+#---------------------------------------
 
+mysetone= {"ahmed","osama","omar", 100}
+print (mysetone)
+# print(mysetone[0])
 
+# # Slicing Can't be done on set ()
+# mysetwo= {1,2,3,4,5,6}
+# print(mysettwo[0:3])
 
 
+# has only immutable data type 
+# mysetthree={"omar","ahmed",100, 100.5,True [1, 2, 3]} # unhashable type: 'list' [1, 2, 3] list not hashable type 
+mysetfour={"osama", 100, 100.5, True, (1,2,3)} #convert list to tuple [1, 2, 3] > (1,2,3)
 
+print (mysetfour)
 
+#set item is uniqe 
+mysetfour={1,2,"omar","one",1,100.5}
+print(mysetfour)
 
 
+#------------------------------------------------------------------------------------------------
+#-- Set Method ---
+#-------------------------
 
+# clear()
+aaa= {1,2,3}
+aaa.clear()
+print(aaa)
 
+# Union()
 
+bb={'one','two','three'}
+cc={'1','2','3'}
+dd={'Zero','Cool','amazing'}
 
+print(bb|cc)
+print(bb.union(dd,cc))
 
 
+# add()
 
+cc={'1','2','3','4'}
+cc.add(5)
+cc.add(6)
+print(cc)
 
+#copy()
 
+e={1,2,3,4}
+f=e.copy()  #shalow copy 
+print(e)
+print(f)
 
+# remove()
+g= {1,2,3,4}
+g.remove(1)
+# g.remove(5) # it will prompet error
+print(g)
 
+# discard()
+h= {1,2,3,4}
+h.discard(1)
+h.discard(5) 
+print(h)
 
+# pop()
 
+i={'a',True, 1, 2, 3, 4, 5}
+print(i.pop())
 
+# update()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+j= {1,2,3}
+k={1,'a','b',2}
+j.update(k) 
+j.update(['html','css']) 
+print(j)
 
 
 
