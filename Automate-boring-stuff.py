@@ -31,10 +31,12 @@
 #     total = total + num
 # print (total)
 
-for i in range(0, 10, 2):  # 2 stand for step forward to move the next value into i
-    print(i)                  # it should print 0 2 4 6 8
+# for i in range(0, 10, 2):  # 2 stand for step forward to move the next value into i
+#     print(i)                  # it should print 0 2 4 6 8
 
-
+import random # this is module called random it will retreve random value in rang u provide
+for i in range(5):
+    print(random.randint(1,10))
 
 
 
