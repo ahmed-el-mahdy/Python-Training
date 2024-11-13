@@ -100,7 +100,7 @@ while True: # The main game loop.
         print('Rock versus ...')
     elif playermove == 'p':
         print('Paper versus ...')
-    elif playermove == 'S':
+    elif playermove == 's':
         print('Scissors versus ...')    
 
     # Display what the computer chooses
