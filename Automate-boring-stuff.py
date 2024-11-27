@@ -160,27 +160,51 @@
 #     print('Error Invalid argument.')
 
 
+# # For Loop in range 
+# supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+# for i in range(len(supplies)):
+#     print('Index ' + str(i) + ' in supplies is :' + supplies[i])
+
+# 'howdy' in ['hello', 'hi', 'howdy']
+
+# spam = ['hello', 'hi', 'gas']
+# 'cat' in spam
 
 
+# # Using the random.choice() and random.shuffle() Functions with Lists
+
+# import random
+# pets = ['bird','cat','mouse']
+
+# random.choice(pets)
+
+# import random
+# people = ['ahmed' ,'ali' ,'zaid' ,'tarek']
+# random.shuffle(people)
+
+# spam = 42 
+# spam = spam + 1
+# #==========
+# spam += 1
+
+# # Methods 
+
+# spam = ['asda','asdf','asds','asd']
+# spam.index('asda')
+
+# and so on to the reset of the element 
+
+# How to add to the list 
+
+spam = ['fat','cat','bat']
+spam.append('rabit') # method to add an element to the list 
+
+# it will be spam = ['fat','cat','bat','rabit']
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# if we need to add element to list in spesific index 
+spam = ['fat','cat','bat']
+spam.insert(1,'rat')
 
 
 
