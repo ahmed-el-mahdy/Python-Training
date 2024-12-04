@@ -159,7 +159,6 @@
 # except ZeroDivisionError:
 #     print('Error Invalid argument.')
 
-
 # # For Loop in range 
 # supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
 # for i in range(len(supplies)):
@@ -169,7 +168,6 @@
 
 # spam = ['hello', 'hi', 'gas']
 # 'cat' in spam
-
 
 # # Using the random.choice() and random.shuffle() Functions with Lists
 
@@ -196,39 +194,56 @@
 
 # How to add to the list 
 
-spam = ['fat','cat','bat']
-spam.append('rabit') # method to add an element to the list 
+# spam = ['fat','cat','bat']
+# spam.append('rabit') # method to add an element to the list 
 
-# it will be spam = ['fat','cat','bat','rabit']
+# # it will be spam = ['fat','cat','bat','rabit']
 
+# # if we need to add element to list in spesific index 
+# spam = ['fat','cat','bat']
+# spam.insert(1,'rat')
 
-# if we need to add element to list in spesific index 
-spam = ['fat','cat','bat']
-spam.insert(1,'rat')
+# # We can also remove value from the list using remove module
+# spam = ['fat','cat','bat']
+# spam.remove('bat')
 
+# # Sorting a list of numbers values upward 
+# spam =  [2,3.2,5,1,7,6,9]
+# spam.sort()
+# # Sorting a list of string values Alphapatical 
+# spam = ['mona','fathy','mousa','zain','rami']
+# spam.sort()
 
+# # Sorting a list with deffrenet value it will reteurn ---ERROR---
+# spma = ['ali','zain','toka',1,2,5,8,3,4,6]
+# spam.sort()
 
+# # Sorting a list of numbers values reversed
+# spam =  [2,3.2,5,1,7,6,9]
+# spam.sort(reverse=True)
 
+name = 'zophie'
+name [0] # will show the first element from the name value which will be 'z' 
+name [-1] # will show the last element from the name value which will be 'e'
 
+name [0:4] #will show the elements for index 0 to 4   which will be 'zoph' 
+# We can use this to check if this value in the elements of the array or not
+'zo' in name    # it should reply with True and will be False if the element is not in the array
 
+for i in name:
+    print ('***' + i + '***') # it will print every element in a separated line between *** ***
 
+# Tubles is like list but can not changed 
 
+eggs = ('hello', 42)
+eggs[0]
 
+# if there is tuples content single element it's required a comma , in the end 
+value = ('asd',)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# We can covert list to tuples like the below and we can conver a tuple to list as well
+arst= tuple(['cat','dog',5])
+list(('cat','dog',5))
 
 
 
