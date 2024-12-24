@@ -58,7 +58,6 @@
 #     print('Howdy')
 # else:
 #     print('Greetings!')
-
 # for i in range(1, 11):
 #     print(i)
 
@@ -67,42 +66,193 @@
 #     print(i)
 #     i= i + 1
 
-def hello():
-    print('Howdy!')
-    print('Howdy!!!!')
-    print('Hello there.')
-hello()
-hello()
-hello()
+# def hello():
+#     print('Howdy!')
+#     print('Howdy!!!!')
+#     print('Hello there.')
+# hello()
+# hello()
+# hello()
 
-def hello(name):
-    print('Hello, ' + name)
-    
-hello('alice')
-hello('bob')    
+# def hello(name):
+#     print('Hello, ' + name) 
+# hello('alice')
+# hello('bob')    
+# len('hello')
+# spam = print('hello')
+# None == spam
+# print('cat', 'dog', 'ice', 'sky', sep=',') 
 
-len('hello')
+# def a():
+#     print('a() starts')
+#     b()
+#     d()
+#     print('a() returns')   
+# def b():
+#     print('b() start')
+#     c()
+#     print('b() returns')
+# def c():
+#     print('c() strat')
+#     print('c() returns') 
+# def d():
+#     print('d() strat')
+#     print('d() returns')
+# a()
 
-spam = print('hello')
-None == spam
+# def spam():
+#     eggs = 31337
+# spam()
+# print(eggs)
 
-print('cat', 'dog', 'ice', 'sky', sep=',') 
+# def spam():
+#     eggs = 99 #local scop variable 
+#     becon() #calling function becon which the egges=0 but in different local scop and not effect in here
+#     print(eggs)
+# def becon():
+#     ham  = 101 
+#     eggs = 0 
+# spam()
+
+# def spam():
+#     print(eggs) # Here we call the global variable which defined in below code
+# eggs=32 # defined as global scope
+# spam()
+# print(eggs)
+
+# def spam():
+#     eggs= 'spam local'
+#     print(eggs) # will print the local value of eggs in spam
+# def bacon():
+#     eggs= 'bacon local'
+#     print(eggs) # will print local value of eggs in bacon
+#     spam()
+#     print(eggs) # will print local value of eggs in bacon
+# eggs= 'global'
+# bacon()
+# print(eggs) # it will print the global value for eggs
+
+# def spam():
+#     global eggs # using global definition to mark eggs as a global variable
+#     eggs= 'spam'
+# eggs = 'global'
+# spam() # here by the sorting when we call the spam it will update the eggs value form into the spam fun
+# print(eggs)
+
+# def spam(divideBy):
+#     try:             # using try method and print error massage instead of program fail and exit
+#         return 42 / divideBy
+#     except ZeroDivisionError:
+#         print('Error Invalid argument.')
+# print(spam(2))
+# print(spam(12))
+# print(spam(0))
+# print(spam(1))
+
+# def spam(divideBy):
+#     return 42 / divideBy
+# try:                # Another way to use try but it will stop when the below exception
+#     print(spam(2))
+#     print(spam(12))
+#     print(spam(0))
+#     print(spam(1))
+# except ZeroDivisionError:
+#     print('Error Invalid argument.')
+
+# # For Loop in range 
+# supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+# for i in range(len(supplies)):
+#     print('Index ' + str(i) + ' in supplies is :' + supplies[i])
+
+# 'howdy' in ['hello', 'hi', 'howdy']
+
+# spam = ['hello', 'hi', 'gas']
+# 'cat' in spam
+
+# # Using the random.choice() and random.shuffle() Functions with Lists
+
+# import random
+# pets = ['bird','cat','mouse']
+
+# random.choice(pets)
+
+# import random
+# people = ['ahmed' ,'ali' ,'zaid' ,'tarek']
+# random.shuffle(people)
+
+# spam = 42 
+# spam = spam + 1
+# #==========
+# spam += 1
+
+# # Methods 
+
+# spam = ['asda','asdf','asds','asd']
+# spam.index('asda')
+
+# and so on to the reset of the element 
+
+# How to add to the list 
+
+# spam = ['fat','cat','bat']
+# spam.append('rabit') # method to add an element to the list 
+
+# # it will be spam = ['fat','cat','bat','rabit']
+
+# # if we need to add element to list in spesific index 
+# spam = ['fat','cat','bat']
+# spam.insert(1,'rat')
+
+# # We can also remove value from the list using remove module
+# spam = ['fat','cat','bat']
+# spam.remove('bat')
+
+# # Sorting a list of numbers values upward 
+# spam =  [2,3.2,5,1,7,6,9]
+# spam.sort()
+# # Sorting a list of string values Alphapatical 
+# spam = ['mona','fathy','mousa','zain','rami']
+# spam.sort()
+
+# # Sorting a list with deffrenet value it will reteurn ---ERROR---
+# spma = ['ali','zain','toka',1,2,5,8,3,4,6]
+# spam.sort()
+
+# # Sorting a list of numbers values reversed
+# spam =  [2,3.2,5,1,7,6,9]
+# spam.sort(reverse=True)
+
+name = 'zophie'
+name [0] # will show the first element from the name value which will be 'z' 
+name [-1] # will show the last element from the name value which will be 'e'
+
+name [0:4] #will show the elements for index 0 to 4   which will be 'zoph' 
+# We can use this to check if this value in the elements of the array or not
+'zo' in name    # it should reply with True and will be False if the element is not in the array
+
+for i in name:
+    print ('***' + i + '***') # it will print every element in a separated line between *** ***
+
+# Tubles is like list but can not changed 
+
+eggs = ('hello', 42)
+eggs[0]
+
+# if there is tuples content single element it's required a comma , in the end 
+value = ('asd',)
+
+# We can covert list to tuples like the below and we can conver a tuple to list as well
+arst= tuple(['cat','dog',5])
+list(('cat','dog',5))
 
 
-spam = [ 2, 4, 6, 8, 10 ]
-spam[2]= 'hello'
 
 
-spam = [ 'a', 'b', 'c', 'd' ]
 
-#question
-spam[int(int('3'*2)//11)] #string *2 will dubele the value twice it will 33 and next devided by // 11 will equal 3 so it's return int 3 as index of the list
-# will be 'd' 
 
-bacon = [3.14, 'cat', 11, 'cat' , True]
-bacon.index('cat')
-bacon.append(99) # it will add 99 at   end of the list 
-bacon.remove('cat') # it will remove the first cat value from the list index 
+
+
+
 
 
 
