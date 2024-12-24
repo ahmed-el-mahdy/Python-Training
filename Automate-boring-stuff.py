@@ -87,3 +87,31 @@ spam = print('hello')
 None == spam
 
 print('cat', 'dog', 'ice', 'sky', sep=',') 
+
+
+spam = [ 2, 4, 6, 8, 10 ]
+spam[2]= 'hello'
+
+
+spam = [ 'a', 'b', 'c', 'd' ]
+
+#question
+spam[int(int('3'*2)//11)] #string *2 will dubele the value twice it will 33 and next devided by // 11 will equal 3 so it's return int 3 as index of the list
+# will be 'd' 
+
+bacon = [3.14, 'cat', 11, 'cat' , True]
+bacon.index('cat')
+bacon.append(99) # it will add 99 at   end of the list 
+bacon.remove('cat') # it will remove the first cat value from the list index 
+
+
+
+
+
+
+
+
+
+
+
+
