@@ -9,7 +9,6 @@ def joinList(list):
     else:
         return ', '.join(list[:-1]) + ', and ' + list[-1]
 
-spam = ['apples', 'bananas', 'tofu', 'cats']
 print(joinList(spam))        
 print(joinList(['apples', 'bananas']))  # Output: "apples, and bananas"
 print(joinList(['apples']))         # Output: "apples"
