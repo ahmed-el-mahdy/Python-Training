@@ -246,17 +246,42 @@ arst= tuple(['cat','dog',5])
 list(('cat','dog',5))
 
 
+# Dictionaries Methods
+
+spam = {'color': 'red', 'age': 42 }
+for v in spam.values():
+    print(v)
+# it'll print all the values in the dictionaries     
+    
+spam = {'color': 'red', 'age': 42 }
+for k in spam.key():
+    print(k)
+# it'll print all the Keys in the dictionaries   
+
+spam = {'color': 'red', 'age': 42 }
+for i in spam.item():
+    print(i)
+# it'll print all the keys & Values in the dictionaries   
 
 
+# We can check if an element is sorted in the dictionaries or not 
+spam = {'name': 'zozo', 'age': 4}
+'name' in spam.keys()   # name here as key
+# will print True
 
+'zezo' in spam.values()   # zezo here as values
+# will print True
 
+4 in spam.values()   # 4 here as values
+# will print True
 
+picnicItems = {'apples': 5, 'cups': 3}
+'I am bringing ' + str(picnicItems.get('cups', 0)) + 'cups.'
+# That's how we used dictionaries and retrive data from in into output 
 
-
-
-
-
-
+spam = { 'name': 'Poika', 'age': 4} # we insert the string value between '' and the init without ''
+spam.setdefault('color', 'black')
+# we can check if there a key value does exist or not and add it if it does not exist
 
 
 
