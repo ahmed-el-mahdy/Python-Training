@@ -284,6 +284,52 @@ spam.setdefault('color', 'black')
 # we can check if there a key value does exist or not and add it if it does not exist
 
 
+# Working with Strings
+
+print ("Hello there!\nHow are you?\nI'm doing fine.")
+
+print (''' Dear Alice,
+       Eva's cat has been arrested for catnapping, cat burglary, and extortion.
+       Sincerely,
+       Bob''')
+
+# we can use ''' ''' to print string statment with multi lines with no issue.
+
+# Also we can use it to mark the writen command in multi lines as shown below
+
+"""This is a test Python program.
+written by Ahmed Elmahdy a.elmahdy.mail@gmail.com 
+
+This program was desigend for python 3, not python 2.
+"""
+
+def spam():
+    """ This a multiline comment to help 
+    explain what the spam() function does. """
+    print ('Hello!')
+    
+# Working with Strings 
+
+name = 'al'
+age = 30
+
+f'My name is {name}. Next year I will be {age+1}.'
+
+""" It will print 'My name is al. Next year I will be 31.' """
+
+spam = 'Hello, World!'
+spam = spam.upper()
+""" it will print the string in upper case so we used spam = to restore the new value in the spam """    
+
+spam = spam.lower()
+""" it will print the string in lower case so we used spam = to restore the new value in the spam """ 
+
+spam.islower()
+# will display True 
+
+""" Here we can check if the strings start with specific word """
+
+'Jerrcy now wakel elgaow'.startswith('jerrcy')
 
 
 
