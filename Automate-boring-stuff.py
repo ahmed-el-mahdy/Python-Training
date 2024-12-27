@@ -330,9 +330,23 @@ spam.islower()
 """ Here we can check if the strings start with specific word """
 
 'Jerrcy now wakel elgaow'.startswith('jerrcy')
+""" It will print True and u need to remember it's case sencitive """
 
+# here we can convert list into strings in a nice format by using .join function like the chatgpt example
+', '.join(['cats', 'rat','bats'])
 
+# acually we can convert string message into list by using split() function as shown below
+'My name is Ahmed'.split()
 
+'This is sentence one. This is sentence two'.split('. ')
 
+listed= '''Dear Ali,
+How have you been? I am fine.
+There is a container in the fridge
+That is labeled "Milk Experiment."
 
+please do not drink it.
+sincedrely,
+Ahmed '''
 
+listed.split('\n')
